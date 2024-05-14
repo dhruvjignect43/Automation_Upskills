@@ -2,24 +2,9 @@ package dataobjects.GTDO;
 
 public class loginUser {
 
-    public String getUsername() {
-        return username;
-    }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    private String username;
-    private String password;
+    private String playerName;
+    private String loginPassword;
 
     public String getPlayerName() {
         return playerName;
@@ -37,6 +22,4 @@ public class loginUser {
         this.loginPassword = loginPassword;
     }
 
-    private String playerName;
-    private String loginPassword;
 }
