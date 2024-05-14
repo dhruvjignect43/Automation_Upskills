@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="D:/Automation_Upskills(failed)">
+    <classes>
+      <class name="GT_Demo.RegisterTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+          <include name="VerifyThatUserIsAbleToRegisterYourSelfSuccessFully"/>
+          <include name="reportGeneration"/>
+        </methods>
+      </class> <!-- GT_Demo.RegisterTest -->
+      <class name="GT_Demo.ProfileTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="VerifyThatUserIsAbleToSeeTheTransactionBySelectingTheValidValueFromTheDropDown"/>
+          <include name="VerifyThatPayMoneyAndPayableMoneyAreSame"/>
+          <include name="verifyThatUserIsAbleToAddDepositSuccessfully"/>
+          <include name="VerifyThatUserIsAbleToAddPhoneNumber"/>
+          <include name="reportGeneration"/>
+          <include name="VerifyThatTheErrorMessageIsDisplayedWhenUserPutTheNegativePassword"/>
+          <include name="VerifyThatValidationMessageIsDisplayedWhenUserEnterSameEmailWithinOneMinute"/>
+          <include name="VerifyThatMyCashBackPageIsDisplayed"/>
+          <include name="VerifyThatUserIsAbleToSetTheLimit"/>
+          <include name="VerifyBonusHistoryPageLoadsCorrectlyOrNot"/>
+          <include name="VerifyThatUserIsAbleToInviteFriendsUsingValidEmailAddress"/>
+          <include name="beforeSuite"/>
+          <include name="VerifyThatUserIsAbleToSeeThePreviousGameHistory"/>
+        </methods>
+      </class> <!-- GT_Demo.ProfileTest -->
+      <class name="GT_Demo.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="reportGeneration"/>
+          <include name="beforeSuite"/>
+          <include name="VerifyThatUserIsAbleToLogoutSuccessFully"/>
+        </methods>
+      </class> <!-- GT_Demo.LoginTest -->
+    </classes>
+  </test> <!-- D:/Automation_Upskills(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

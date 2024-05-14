@@ -1,0 +1,1 @@
+{"uuid":"b9ba4ff3-461f-46aa-b2ac-0393fb9a3793","name":"Automation_Upskills","children":["32f03822-b0ad-4580-9eeb-218194d8ea70"],"befores":[{"name":"beforeTest","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1709721427519,"stop":1709721429061}],"afters":[],"start":1709721427491,"stop":1709721431250}

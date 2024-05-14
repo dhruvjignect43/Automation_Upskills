@@ -1,0 +1,1 @@
+{"uuid":"f26872d7-8e31-4591-b759-1198febceb41","name":"Automation_Upskills","children":["344811ce-d4c6-40f5-9b35-a2f1adb343a1"],"befores":[{"name":"startReport","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1709296709234,"stop":1709296709453}],"afters":[],"start":1709296709218,"stop":1709296784771}
