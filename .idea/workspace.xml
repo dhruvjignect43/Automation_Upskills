@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b9e27d0-7744-4205-b4f6-fe1cabd191fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/datafactory/GTDF/InviteEmailData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/datafactory/GTDF/LoginData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataobjects/GTDO/inviteEmail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataobjects/GTDO/loginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/GtPO/home/HomePO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/GtPO/invite/InviteEmailPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/GtPO/profile/ProfilePO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/uploadContent/demo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GT_Demo/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GT_Demo/ProfileTest.java" afterDir="false" />
+    <list default="true" id="0b9e27d0-7744-4205-b4f6-fe1cabd191fc" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +22,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dhruvjignect43&quot;
+  }
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -39,6 +36,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dhruvjignect43/Automation_Upskills.git&quot;,
+    &quot;accountId&quot;: &quot;d7b4d565-c561-4944-a799-28270d0fc16d&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/ExtentTest.class" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -76,7 +79,7 @@
     "TestNG.RegisterTest.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/stores-api-test/stores-api-test",
+    "last_opened_file_path": "D:/java-rt-jar-stubs-1.5.0.jar/java-rt-jar-stubs-1.5.0.jar",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.27471265",
@@ -92,7 +95,7 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest">
+  <component name="RunManager" selected="TestNG.LoginTest.VerifyThatUserIsAbleToLoginSuccessfully">
     <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_Upskills" />
       <shortenClasspath name="NONE" />
@@ -123,7 +126,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayGameTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.VerifyThatUserIsAbleToLoginSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_Upskills" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -135,9 +138,10 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="GT_Demo" />
-      <option name="MAIN_CLASS_NAME" value="GT_Demo.PlayGameTest" />
+      <option name="MAIN_CLASS_NAME" value="GT_Demo.LoginTest" />
+      <option name="METHOD_NAME" value="VerifyThatUserIsAbleToLoginSuccessfully" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -268,19 +272,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.LoginTest.VerifyThatUserIsAbleToLoginSuccessfully" />
       <item itemvalue="TestNG.ProfileTest" />
-      <item itemvalue="TestNG.PlayGameTest" />
       <item itemvalue="TestNG.RegisterTest" />
       <item itemvalue="TestNG.RegisterTest.VerifyThatUserIsAbleToRegisterYourSelfSuccessFully" />
       <item itemvalue="TestNG.LoginTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.VerifyThatUserIsAbleToLoginSuccessfully" />
         <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.ProfileTest" />
         <item itemvalue="TestNG.RegisterTest" />
         <item itemvalue="TestNG.RegisterTest.VerifyThatUserIsAbleToRegisterYourSelfSuccessFully" />
-        <item itemvalue="TestNG.PlayGameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -293,6 +297,15 @@
       <option name="presentableId" value="Default" />
       <updated>1708490093504</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1715690793252</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715690793252</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -311,6 +324,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
