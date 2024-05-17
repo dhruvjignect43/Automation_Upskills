@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9e27d0-7744-4205-b4f6-fe1cabd191fc" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/JavaHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/JavaHelpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ExtentReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ExtentReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,29 +66,29 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.Automation_Upskills [clean].executor": "Run",
-    "Maven.Automation_Upskills [test].executor": "Run",
-    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
-    "Notification.DoNotAsk-Vcs Important Messages": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.D:/Automation_Upskills/testng.xml.executor": "Run",
-    "TestNG.LoginTest.VerifyThatUserIsAbleToLoginSuccessfully.executor": "Run",
-    "TestNG.LoginTest.executor": "Run",
-    "TestNG.PlayGameTest.executor": "Run",
-    "TestNG.ProfileTest.executor": "Run",
-    "TestNG.RegisterTest.VerifyThatUserIsAbleToRegisterYourSelfSuccessFully.executor": "Run",
-    "TestNG.RegisterTest.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/java-rt-jar-stubs-1.5.0.jar/java-rt-jar-stubs-1.5.0.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.27471265",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.Automation_Upskills [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Automation_Upskills [test].executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
+    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.D:/Automation_Upskills/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.VerifyThatUserIsAbleToLoginSuccessfully.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PlayGameTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ProfileTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegisterTest.VerifyThatUserIsAbleToRegisterYourSelfSuccessFully.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegisterTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/xalan.jar/xalan.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.27471265&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
   </component>
@@ -96,7 +98,7 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.VerifyThatUserIsAbleToLoginSuccessfully">
+  <component name="RunManager" selected="TestNG.LoginTest">
     <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_Upskills" />
       <shortenClasspath name="NONE" />
@@ -281,8 +283,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest.VerifyThatUserIsAbleToLoginSuccessfully" />
         <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.LoginTest.VerifyThatUserIsAbleToLoginSuccessfully" />
         <item itemvalue="TestNG.ProfileTest" />
         <item itemvalue="TestNG.RegisterTest" />
         <item itemvalue="TestNG.RegisterTest.VerifyThatUserIsAbleToRegisterYourSelfSuccessFully" />
@@ -322,7 +324,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715768304022</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1715850754143</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715850754143</updated>
+    </task>
+    <task id="LOCAL-00005" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1715850774150</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715850774150</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">

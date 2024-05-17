@@ -26,6 +26,7 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import static utilities.Constants.PROPERTY_FILE;
 
 
 public class ExtentReport implements ITestListener {
@@ -34,10 +35,11 @@ public class ExtentReport implements ITestListener {
     public static ExtentReports extent;
     public static ExtentTest extentTest;
     static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+    String environment = JavaHelpers.getPropertyValue(PROPERTY_FILE, "Env");
 
 
     public void initializeReports() {
-        sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/Reports/extentSparkReports.html");
+        sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/Reports/extentReports.html");
         sparkReporter.config().setDocumentTitle("Automation Report");
         sparkReporter.config().setReportName("GT Automation Test Execution Report");
         sparkReporter.config().setTheme(Theme.DARK);
@@ -50,7 +52,10 @@ public class ExtentReport implements ITestListener {
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
         extent.setAnalysisStrategy(AnalysisStrategy.SUITE);
         extent.attachReporter(sparkReporter);
-        extent.setSystemInfo("Browser", "Chrome");
+        extent.setSystemInfo("OS", System.getProperty("os.name"));
+        extent.setSystemInfo("Java Version", System.getProperty("java.version"));
+        extent.setSystemInfo("User", System.getProperty("user.name"));
+        extent.setSystemInfo("Environment", environment);
     }
 
     public void accessReporterTest(ExtentTest extentTest, ITestResult result) {
@@ -60,36 +65,55 @@ public class ExtentReport implements ITestListener {
         }
     }
 
+    public void onTestStart(ITestResult result) {
+        test.set(extentTest);
+    }
+
     public void onTestSuccess(ITestResult result) {
+        extentTest.assignCategory("Passed");
+        accessReporterTest(extentTest, result);
         ExtentTest extentTest = test.get();
         accessReporterTest(extentTest, result);
+        onTestStart(result);
     }
 
     public static String getScreenshots(WebDriver driver, String screenshotName) throws IOException {
-        String dateName = new SimpleDateFormat("yyyymmddhhss").format(new Date());
-        TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-        File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
-        String destination = System.getProperty("user.dir") + "/FailedTestScreenshots/Failed Case" + screenshotName + dateName + ".png";
-        File finalDestination = new File(destination);
+        String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+        String relativePath = "Screenshots/" + screenshotName + dateName + ".png";
+        String absolutePath = System.getProperty("user.dir") + "/Reports/" + relativePath;
+        File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File finalDestination = new File(absolutePath);
         FileUtils.copyFile(source, finalDestination);
-        return destination;
+        return relativePath;
     }
 
     public void onTestFailure(ITestResult result, WebDriver driver) throws IOException {
-
+        accessReporterTest(extentTest, result);
         if (result.getStatus() == ITestResult.FAILURE) {
-
             StringWriter stringWriter = new StringWriter();
             PrintWriter printWriter = new PrintWriter(stringWriter);
             result.getThrowable().printStackTrace(printWriter);
+
             String stackTrace = "<pre>" + stringWriter.toString().replace(System.getProperty("line.separator"), "<br>") + "</pre>";
-            extentTest.log(Status.FAIL, "<pre>"+"<b>Name of Failed Case: </b>" + result.getName()+"</pre>");
-            extentTest.log(Status.FAIL,"<b>Cause By error is : <b>" + stackTrace);
-            extentTest.log(Status.INFO, "<pre>"+"<b>Case Info Status: <b>" + result.getStatus()+"</pre>");
+            extentTest.log(Status.FAIL, "<pre><b>Name of Failed Case: </b>" + result.getName() + "</pre>");
+            extentTest.log(Status.FAIL, "<b>Cause By error is :</b>" + stackTrace);
+            extentTest.log(Status.INFO, "<pre><b>Case Info Status: </b>" + result.getStatus() + "</pre>");
+            extentTest.log(Status.INFO, "<pre><b>Start Time: </b>" + new Date(result.getStartMillis()) + "</pre>");
+            extentTest.log(Status.INFO, "<pre><b>End Time: </b>" + new Date(result.getEndMillis()) + "</pre>");
+            long duration = result.getEndMillis() - result.getStartMillis();
+            extentTest.log(Status.INFO, "<pre><b>Duration: </b>" + duration + " ms</pre>");
             String screenshotsPath = ExtentReport.getScreenshots(driver, result.getName());
-            extentTest.log(Status.FAIL, (Markup) extentTest.addScreenCaptureFromPath(screenshotsPath));
+            extentTest.addScreenCaptureFromPath(screenshotsPath);
         } else if (result.getStatus() == ITestResult.SKIP) {
-            extentTest.log(Status.SKIP, "<pre>"+"<b>Test case skipped is: <b>" + result.getThrowable()+"</pre>");
+            extentTest.log(Status.SKIP, "<pre><b>Test case skipped is: </b>" + result.getThrowable() + "</pre>");
+        } else if (result.getStatus() == ITestResult.SUCCESS) {
+            extentTest.log(Status.INFO, "<pre><b>Package Name: </b>" + result.getTestClass().getRealClass().getPackage().getName() + "</pre>");
+            extentTest.log(Status.INFO, "<pre><b>Class Name: </b>" + result.getTestClass().getRealClass().getSimpleName() + "</pre>");
+            extentTest.log(Status.INFO, "<pre><b>Method Name: </b>" + result.getMethod().getMethodName() + "</pre>");
+            extentTest.log(Status.INFO, "<pre><b>Start Time: </b>" + new Date(result.getStartMillis()) + "</pre>");
+            extentTest.log(Status.INFO, "<pre><b>End Time: </b>" + new Date(result.getEndMillis()) + "</pre>");
+            long duration = result.getEndMillis() - result.getStartMillis();
+            extentTest.log(Status.INFO, "<pre><b>Duration: </b>" + duration + " ms</pre>");
         }
     }
     public void onTestSkipped(ITestResult result) {

@@ -5,6 +5,7 @@ public class Constants {
 
     //Setting up the URLs
     public static final String URL = JavaHelpers.getPropertyValue(PROPERTY_FILE, "url");
+    public static final String Env = JavaHelpers.setSystemVariable(PROPERTY_FILE, "Env");
 
     //Selenium constants
     public static final int WEBDRIVER_WAIT_DURATION = Integer.parseInt(JavaHelpers.getPropertyValue(PROPERTY_FILE, "WebDriverWaitDuration"));
