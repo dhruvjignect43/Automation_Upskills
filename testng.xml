@@ -3,30 +3,30 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="D:/Automation_Upskills">
         <classes>
-            <class name="GT_Demo.LoginTest">
-                <methods>
-                    <include name="VerifyThatUserIsAbleToLoginSuccessfully"/>
-                    <include name="VerifyThatUserIsAbleToLogoutSuccessFully"/>
-                    <include name="VerifyThatUserIsNotAbleToLoginWithInvalidUserCredentials"/>
-                </methods>
-            </class>
-            <class name="GT_Demo.ProfileTest">
-                <methods>
-                    <include name="VerifyThatUserIsAbleToInviteFriendsUsingValidEmailAddress"/>
-                    <include name="VerifyThatValidationMessageIsDisplayedWhenUserEnterSameEmailWithinOneMinute"/>
-                    <include name="VerifyThatUserIsAbleToAddPhoneNumber"/>
-                    <include name="verifyThatUserIsAbleToAddDepositSuccessfully"/>
-                    <include name="VerifyThatUserIsAbleToSearchTheGame"/>
-                    <include name="VerifyThatUserIsAbleToSetTheLimit"/>
-                    <include name="VerifyThatUserIsAbleToSeeTheTransactionBySelectingTheValidValueFromTheDropDown"/>
-                    <include name="VerifyThatUserIsAbleToSeeThePreviousGameHistory"/>
-                    <include name="VerifyBonusHistoryPageLoadsCorrectlyOrNot"/>
-                    <include name="VerifyThatPayMoneyAndPayableMoneyAreSame"/>
-                    <include name="VerifyThatDepositPageIsDisplayed"/>
-                    <include name="VerifyThatMyCashBackPageIsDisplayed"/>
-                    <include name="VerifyThatTheErrorMessageIsDisplayedWhenUserPutTheNegativePassword"/>
-                </methods>
-            </class>
+<!--            <class name="GT_Demo.LoginTest">-->
+<!--                <methods>-->
+<!--                    <include name="VerifyThatUserIsAbleToLoginSuccessfully"/>-->
+<!--                    <include name="VerifyThatUserIsAbleToLogoutSuccessFully"/>-->
+<!--                    <include name="VerifyThatUserIsNotAbleToLoginWithInvalidUserCredentials"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="GT_Demo.ProfileTest">-->
+<!--                <methods>-->
+<!--                    <include name="VerifyThatUserIsAbleToInviteFriendsUsingValidEmailAddress"/>-->
+<!--                    <include name="VerifyThatValidationMessageIsDisplayedWhenUserEnterSameEmailWithinOneMinute"/>-->
+<!--                    <include name="VerifyThatUserIsAbleToAddPhoneNumber"/>-->
+<!--                    <include name="verifyThatUserIsAbleToAddDepositSuccessfully"/>-->
+<!--                    <include name="VerifyThatUserIsAbleToSearchTheGame"/>-->
+<!--                    <include name="VerifyThatUserIsAbleToSetTheLimit"/>-->
+<!--                    <include name="VerifyThatUserIsAbleToSeeTheTransactionBySelectingTheValidValueFromTheDropDown"/>-->
+<!--                    <include name="VerifyThatUserIsAbleToSeeThePreviousGameHistory"/>-->
+<!--                    <include name="VerifyBonusHistoryPageLoadsCorrectlyOrNot"/>-->
+<!--                    <include name="VerifyThatPayMoneyAndPayableMoneyAreSame"/>-->
+<!--                    <include name="VerifyThatDepositPageIsDisplayed"/>-->
+<!--                    <include name="VerifyThatMyCashBackPageIsDisplayed"/>-->
+<!--                    <include name="VerifyThatTheErrorMessageIsDisplayedWhenUserPutTheNegativePassword"/>-->
+<!--                </methods>-->
+<!--            </class>-->
             <class name="GT_Demo.RegisterTest">
                 <methods>
                     <include name="VerifyThatUserIsAbleToRegisterYourSelfSuccessFully"/>

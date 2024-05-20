@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b9e27d0-7744-4205-b4f6-fe1cabd191fc" name="Changes" comment="Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshots/Failed CaseVerifyBonusHistoryPageLoadsCorrectlyOrNot202413070234.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshots/Failed CaseVerifyThatUserIsAbleToLogoutSuccessFully202430080403.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshots/Failed CaseVerifyThatUserIsAbleToLogoutSuccessFully202450070341.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshots/Failed CaseVerifyThatUserIsAbleToRegisterYourSelfSuccessFully202418071250.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedTestScreenshots/Failed CaseVerifyThatUserIsAbleToRegisterYourSelfSuccessFully202439071231.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/extentSparkReports.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ExtentReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ExtentReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/extentReports.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/extentReports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/JavaHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/JavaHelpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +41,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dhruvjignect43/Automation_Upskills.git",
-    "accountId": "29e1e1cc-931b-4c4a-a296-2526655630e8"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dhruvjignect43/Automation_Upskills.git&quot;,
+    &quot;accountId&quot;: &quot;fdf90cb2-2720-4cb8-bba5-63836a0c3902&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/ExtentTest.class" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -87,10 +85,10 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/xalan.jar/xalan.jar",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.27471265",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="ReaderModeSettings">
@@ -360,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715943112201</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Commit">
+      <option name="closed" value="true" />
+      <created>1715943560982</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715943560982</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">

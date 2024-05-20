@@ -15,9 +15,6 @@ import java.util.Random;
 import static com.sun.org.apache.xalan.internal.xsltc.compiler.Constants.CHARACTERS;
 
 
-//import static com.sun.org.apache.xalan.internal.xsltc.compiler.Constants.CHARACTERS;
-
-
 public class JavaHelpers {
     //Time-stamps
 
